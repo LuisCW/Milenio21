@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="../iconos/milenio21logos/logom21 1.png" />
+  <title>Milenio 21 Realty</title>
+</head>
+<body>
+  <div class="ocultar"></div>
+  <header>
+    <div class="container">
+      <a class="logo" href="Milenio21.html"><img class="logo-img" src="../iconos\milenio21logos/logom21 3.png"
+          alt="" /></a>
+      <div class="menu">
+        <ul class="menu-items hidden">
+          <li><a href="Milenio21.html">Home</a></li>
+          <li><a href="#propiedades">Properties</a>
+          </li>
+          <li><a href="#contacto">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <!--Social media-->
+      <div class="redes-sociales">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/Rgb2023?mibextid=LQQJ4d"><img src="../iconos/facebook.png" alt="Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@user4002954376151?_t=8bHrIQuzHAZ&_r=1"><img src="../iconos/tik-tok.png"
+                alt="TikTok" /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/rgbcancun?igshid=YmMyMTA2M2Y="><img src="../iconos/instagram.png"
+                alt="Instagram" /> </a>
+          </li>
+          <li>
+            <a href="https://youtube.com/@RGBRGB234"><img src="../iconos/youtube.png" alt="Youtube" width="36px" /> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--Content-->
+  <div class="language-selector">
+    <div class="selected-language">
+      <a href="../Milenio21.html"><img src="../iconos/mexico.png" alt="US Flag" /></a>
+      <a href="../FR/Milenio21.html"><img src="../iconos/francia (1).png" alt="French Flag" /></a>
+      <a href="../CH/Milenio21.html"><img src="../iconos/porcelana (1).png" alt="Chinese Flag" /></a>
+    </div>
+  </div>
+  <div class="whatsapp">
+    <div class="selected-whattsapp">
+      <a href="https://wa.me/529984596417"><img src="../iconos/whatsapp-64.png" alt="whatsapp" width="50px" /></a>
+    </div>
+  </div>
+  <div class="video-background">
+    <video class="fondo" autoplay muted loop id="myVideo">
+      <source src="../imagenes/iStock-1322217829.mp4" type="video/mp4" />
+    </video>
+    <div class="search-container">
+      <input class="Search-input" type="text" placeholder="Search" />
+      <button class="Search-button" type="submit"><img src="../iconos/lupa.png" alt="" /></button>
+      <div class="boxSearch">
+        <ul class="boxResearch">
+        </ul>
+      </div>
+      <select id="location" onchange="redirectToLink()">
+        <option value="" disabled selected hidden>Location</option>
+        <option value="#properties">Any</option>
+        <option value="#Cancun">Cancun</option>
+        <option value="#PlayaCarmen">Playa Del Carmen</option>
+        <option value="#Tulum">Tulum</option>
+        <option value="#Akumal">Akumal</option>
+        <option value="#PuertoMorelos">Puerto Morelos</option>
+      </select>
+      <select id="status" onchange="redirectToLink()">
+        <option value="" disabled selected hidden>Property Type</option>
+        <option value="#properties">Any</option>
+        <option value="#Apartment">Apartment</option>
+        <option value="#House">House</option>
+        <option value="#Condo">Condo</option>
+        <option value="#StudioApartment">Studio Apartment</option>
+        <option value="#Duplex">Duplex Apartment</option>
+      </select>
+      <select id="price" onchange="redirectToLink()">
+        <option value="" disabled selected hidden>Price</option>
+        <option value="#properties">Any</option>
+        <option value="#1Million">1,000,000-1,999,999</option>
+        <option value="#2Million">2,000,000-2,999,999</option>
+        <option value="#3Million">3,000,000-3,999,999</option>
+        <option value="#4Million">4,000,000-4,999,999</option>
+      </select>
+    </div>    
+    <div class="video-overlay">
+      <p>
+        Cancún, Playa Del Carmen, Akumal, Tulum, Puerto Morelos
+      </p>
+    </div>
+  </div>
+  <a name="propiedades"></a>
+  <h1 class="tituloPropiedades">Propiedades</h1>
+  <section class="properties">
+    <div class="property">
+      <a name="PlayaCarmen"></a>
+      <a name="1Millones"></a>
+      <a name="Departamento"></a>
+      <a href="propiedades/propiedad/Propiedad6.html">
+        <img class="foto" src="../imagenes/6PLAYADELCARMENDEPARTAMENTOSNUEVOS/A1.jpg" alt="Property Image" />
+        <div class="property-details">
+          <h3>New Apartments at Low Prices in Playa del Carmen</h3>
+          <p>Extraordinary brand new apartments in Playa del Carmen, take advantage...</p>
+          <div class="property-info">
+            <p><img src="../iconos/dormitorio.png" alt="" /> 2 bedrooms</p>
+            <p><img src="../iconos/inodoro.png" alt="" /> 2 bathrooms</p>
+            <p><img src="../iconos/marcador-de-posicion.png" alt="" /> Playa del Carmen, Quintana Roo, Mexico</p>
+            <p>Status: For Sale</p>
+            <p><img src="../iconos/signo-de-dolar.png" alt="" /> Price: $1,921,000</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="property">
+      <a name="Cancun"></a>
+      <a name="1Millon"></a>
+      <a name="Casa"></a>
+      <a href="propiedades/propiedad/Propiedad2.html">
+        <img class="foto" src="../imagenes/2CANCUNCASANUEVAABAJOPRECIO/1.jpg" alt="Property Image" />
+        <div class="property-details">
+          <h3>New House in Cancun at a Low Price</h3>
+          <p>Undoubtedly, this is the best option to acquire a two-story house...</p>
+          <div class="property-info">
+            <p><img src="../iconos/dormitorio.png" alt="" /> 3 bedrooms</p>
+            <p><img src="../iconos/inodoro.png" alt="" /> 3 bathrooms</p>
+            <p><img src="../iconos/marcador-de-posicion.png" alt="" /> Cancun, Quintana Roo, Mexico</p>
+            <p>Status: For Sale</p>
+            <p><img src="../iconos/signo-de-dolar.png" alt="" /> Price: $1,990,000</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="property">
+      <a name="PlayaCarmen"></a>
+      <a name="3Millones"></a>
+      <a name="Condominio"></a>
+      <a href="propiedades/propiedad/Propiedad4.html">
+        <img class="foto" src="../imagenes/4PLAYADELCARMENAMPLIOCONDO/1.jpg" alt="Property Image" />
+        <div class="property-details">
+          <h3>Spacious Condominium for Sale in Playa del Carmen</h3>
+          <p>Exclusive luxury condos with 3 bedrooms and 2 full bathrooms for...</p>
+          <div class="property-info">
+            <p><img src="../iconos/dormitorio.png" alt="" /> 3 bedrooms</p>
+            <p><img src="../iconos/inodoro.png" alt="" /> 2 bathrooms</p>
+            <p><img src="../iconos/marcador-de-posicion.png" alt="" /> Playa del Carmen, Quintana Roo, Mexico</p>
+            <p>Status: For Sale</p>
+            <p><img src="../iconos/signo-de-dolar.png" alt="" /> Price: $3,295,000</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="property">
+      <a name="PlayaCarmen"></a>
+      <a name="2Millones"></a>
+      <a name="Apartaestudio"></a>
+      <a href="propiedades/propiedad/Propiedad5.html">
+        <img class="foto" src="../imagenes/5PLAYADELCARMENAPARTMENTOTIPOESTUDIOEN/1.jpg" alt="Property Image" />
+        <div class="property-details">
+          <h3>Studio Apartment 1 Block from the Beach</h3>
+          <p>This modern studio, fully furnished and equipped, is located just one block away from...</p>
+          <div class="property-info">
+            <p><img src="../iconos/dormitorio.png" alt="" /> 1 bedroom</p>
+            <p><img src="../iconos/inodoro.png" alt="" /> 1 bathroom</p>
+            <p><img src="../iconos/marcador-de-posicion.png" alt="" /> Playa del Carmen, Quintana Roo, Mexico</p>
+            <p>Status: For Sale</p>
+            <p><img src="../iconos/signo-de-dolar.png" alt="" /> Price: $2,970,000</p>
+          </div>
+        </div>
+      </a>
+    </div>    
+    <div class="property">
+      <a name="Tulum"></a>
+      <a name="2Millones"></a>
+      <a name="Casa"></a>
+      <a href="propiedades/propiedad/Propiedad8.html">
+        <img class="foto" src="../imagenes/8TULUMDEPARTAMENTODUPLEX/1.png" alt="Property Image" />
+        <div class="property-details">
+          <h3>House for Sale in Tulum, Mexico</h3>
+          <p>Beautiful house with a modern design located in the charming town of Tulum...</p>
+          <div class="property-info">
+            <p><img src="../iconos/dormitorio.png" alt="" /> 4 bedrooms</p>
+            <p><img src="../iconos/inodoro.png" alt="" /> 3 bathrooms</p>
+            <p><img src="../iconos/marcador-de-posicion.png" alt="" /> Tulum, Quintana Roo, Mexico</p>
+            <p>Status: For Sale</p>
+            <p><img src="../iconos/signo-de-dolar.png" alt="" /> Price: $2,495,000</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="property">
+      <a name="Akumal"></a>
+      <a name="3Millones"></a>
+      <a name="Departamento"></a>
+      <a href="propiedades/propiedad/Propiedad1.html">
+        <img class="foto" src="../imagenes/1AKUMALDEPARTAMENTO/1.jpg" alt="Property Image" />
+        <div class="property-details">
+          <h3>Brand New Apartment in Akumal</h3>
+          <p>Apartment in Akumal with two bedrooms and two bathrooms, living room, dining area...</p>
+          <div class="property-info">
+            <p><img src="../iconos/dormitorio.png" alt="" /> 2 bedrooms</p>
+            <p><img src="../iconos/inodoro.png" alt="" /> 2 bathrooms</p>
+            <p><img src="../iconos/marcador-de-posicion.png" alt="" /> Akumal, Quintana Roo, Mexico</p>
+            <p>Status: For Sale</p>
+            <p><img src="../iconos/signo-de-dolar.png" alt="" /> Price: $3,348,000</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="property">
+      <a name="Cancun"></a>
+      <a name="3Millones"></a>
+      <a name="Casa"></a>
+      <a href="propiedades/propiedad/Propiedad3.html">
+        <img class="foto" src="../imagenes/3CANCUNCASASEMINUEVAENZONACENTRICA/1.jpg" alt="Property Image" />
+        <div class="property-details">
+          <h3>Semi-New House in Central Area</h3>
+          <p>Semi-new house with four bedrooms and four bathrooms, spanning 178 square meters...</p>
+          <div class="property-info">
+            <p><img src="../iconos/dormitorio.png" alt="" /> 4 bedrooms</p>
+            <p><img src="../iconos/inodoro.png" alt="" /> 4 bathrooms</p>
+            <p><img src="../iconos/marcador-de-posicion.png" alt="" /> Cancun, Quintana Roo, Mexico</p>
+            <p>Status: For Sale</p>
+            <p><img src="../iconos/signo-de-dolar.png" alt="" /> Price: $3,850,000</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="property">
+      <a name="PuertoMorelos"></a>
+      <a name="4Millones"></a>
+      <a name="Condominio"></a>
+      <a href="propiedades/propiedad/Propiedad7.html">
+        <img class="foto" src="../imagenes/7PUERTOMORELOSCONDONUEVO/1.jpg" alt="Property Image" />
+        <div class="property-details">
+          <h3>New beachfront condominium in Puerto Morelos</h3>
+          <p>This beach condominium has one of the best locations in the heart...</p>
+          <div class="property-info">
+            <p><img src="../iconos/dormitorio.png" alt="" /> 1 bedroom</p>
+            <p><img src="../iconos/inodoro.png" alt="" /> 2 bathrooms</p>
+            <p>
+              <img src="../iconos/marcador-de-posicion.png" alt="" /> Puerto Morelos, Quintana Roo, Mexico
+            </p>
+            <p>Status: For Sale</p>
+            <p>
+              <img src="../iconos/signo-de-dolar.png" alt="" /> Price: $4,680,000
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>    
+  </section>
+  <div id="viviendas-container"></div>
+  <div class="MexicoLindo">
+    <h1 class="Conoce">Beautiful</h1>
+    <h1 class="Mexico">Mexico</h1>
+  </div>
+  <section class="properties">
+    <div id="video-modal1" class="modal">
+      <div class="modal-content">
+        <span class="close close1">&times;</span>
+        <iframe width="560" height="315" src="../imagenes/videosenespaol/1 lindo playa español.mp4"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="video-modal2" class="modal">
+      <div class="modal-content">
+        <span class="close close2">&times;</span>
+        <iframe width="560" height="315" src="../imagenes/videosenespaol/2 lindo chapultepec español.mp4"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="video-modal3" class="modal">
+      <div class="modal-content">
+        <span class="close close3">&times;</span>
+        <iframe width="560" height="315" src="../imagenes/videosenespaol/4 lindo Cancun infraestructura.mp4"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="video-modal4" class="modal">
+      <div class="modal-content">
+        <span class="close close4">&times;</span>
+        <iframe width="560" height="315" src="../imagenes/videosenespaol/5 lindo akumal español.mp4"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="video-modal5" class="modal">
+      <div class="modal-content">
+        <span class="close close5">&times;</span>
+        <iframe width="560" height="315" src="../imagenes/videosenespaol/Mexico lindo veracruz Español.mp4"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="video-modal6" class="modal">
+      <div class="modal-content">
+        <span class="close close6">&times;</span>
+        <iframe width="560" height="315" src="../imagenes/videosenespaol/riviera maya español.m4v"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="video-modal7" class="modal">
+      <div class="modal-content">
+        <span class="close close7">&times;</span>
+        <iframe width="560" height="315" src="../imagenes/videosenespaol/3 lindo angel español.mp4"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="property property1">
+      <a name="PlayaCarmen"></a>
+      <img class="foto" src="../imagenes/Playa_del_Carmen_in_Mexico_(29725304248).jpg" alt="Imagen de propiedad" />
+      <div class="property-details">
+        <h3 style="color:red;">Playa del Carmen</h3>
+      </div>
+    </div>
+    <div class="property property2">
+      <a name="Chapultepec"></a>
+      <img class="foto" src="../imagenes/Lago-Chapultepec.jpg" alt="Imagen de propiedad" />
+      <div class="property-details">
+        <h3 style="color: darkgreen;">Chapultepec</h3>
+      </div>
+    </div>
+    <div class="property property3">
+      <a name="Cancun"></a>
+      <img class="foto" src="../imagenes/cancun.jpg" alt="Imagen de propiedad" />
+      <div class="property-details">
+        <h3 style="color: darkmagenta;">Cancún</h3>
+      </div>
+    </div>
+    <div class="property property4">
+      <a name="Akumal"></a>
+      <img class="foto" src="../imagenes/akumal-turtles.jpg" alt="Imagen de propiedad" />
+      <div class="property-details">
+        <h3 style="color: deepskyblue;">Akumal</h3>
+      </div>
+    </div>
+    <div class="property property5">
+      <a name="Veracruz"></a>
+      <img class="foto" src="../imagenes/veracruz.jpg" alt="Imagen de propiedad" />
+      <div class="property-details">
+        <h3 style="color: chocolate;">Veracruz</h3>
+      </div>
+    </div>
+    <div class="property property6">
+      <a name="Maya"></a>
+      <img class="foto" src="../imagenes/zona-arqueologica-detulum.jpg" alt="Imagen de propiedad" />
+      <div class="property-details">
+        <h3 style="color: darkolivegreen;">Riviera Maya</h3>
+      </div>
+    </div>
+    <div class="property property7">
+      <a name="Mexico"></a>
+      <img class="foto" src="../imagenes/bandera-Mexico-1200x675-1.jpeg" alt="Imagen de propiedad" />
+      <div class="property-details">
+        <h3 style="color: green;">Beautiful Mexico</h3>
+      </div>
+    </div>
+  </section>
+  <a name="contacto"></a>
+  <section class="ZonaDeContacto">
+    <form action="https://formsubmit.co/mexicanrealtyhomes@gmail.com" method="POST">
+      <h2>Contact</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone:</label>
+      <input type="number" id="phone" name="phone" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input type="submit" value="Enviar">
+
+      <input type="hidden" name="_next" value="Milenio21.html">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </section>
+  <a name="Certificados"></a>
+  <section id="logos">
+    <div class="container">
+      <div class="logo-list">
+        <img class="logo1" src="../iconos/logosasociados/MATRICULA.jpg" alt="Logo 1">
+        <img src="../iconos/logosasociados/CIPS.jpg" alt="Logo 1">
+        <img src="../iconos/logosasociados/5.png" alt="Logo 2" width="300px">
+        <img src="../iconos/logosasociados/3.png" alt="Logo 3">
+        <img src="../iconos/logosasociados/AMPI.png" alt="Logo 4">
+        <img src="../iconos/logosasociados/CREA.jpg" alt="Logo 5">
+        <!-- Agrega más logotipos aquí -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contacto">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-envelope"></i> mexicanrealtyhomes@gmail.com <br> rgbvegas@gmail.com</p>
+        <p><img src="../iconos/mexico.png" alt=""> +52 99 84 59 64 17 </p>
+        <p><img src="../iconos/estados-unidos (1).png" alt=""> +1 702 219 69 11</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Cancun Quintana Roo Mexico 77536
+        </p>
+      </div>
+    </div>
+    <div class="copyrigth">
+      <p>&copy; 2023 Milenio 21 Realty. All rigths reserverd.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
