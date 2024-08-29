@@ -1,0 +1,372 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.ocultar{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.ocultar.active{
+  display: block;
+}
+
+header {
+  background: linear-gradient(to right, #0255a7, #0b6ab8);
+  height: 130px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+header::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.9) 70%
+  );
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0;
+  height: 100%;
+}
+.logo {
+  position: relative;
+  align-items: left;
+  width: 150px;
+  margin-right: 4%;
+}
+.container a .logo-img {
+  position: relative;
+  width: 150%;
+}
+
+
+.fa-search {
+  font-size: 20px;
+  color: #555;
+}
+
+.menu {
+  right: 15%;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+
+/*Menu*/
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.menu-items li {
+  padding: 5px 5px;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.menu-items li a {
+  color: white;
+  font-size: 32px;
+}
+.menu-items li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* Responsive */
+@media (max-width: 1100px) {
+  .menu{
+    right: 5%;
+  }
+}
+@media (max-width: 1000px) {
+  .menu{
+    right: 0;
+  }
+  .menu-items li a {
+    font-size: 28px;
+  }
+}
+@media (max-width: 900px) {
+  .menu-items li a {
+    font-size: 24px;
+  }
+}
+@media (max-width: 800px) {
+  .menu-items li a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo {
+    position: fixed;
+    width: 100px;
+    left: 0;
+  }
+  .menu {
+    left: 25%;
+  }
+}
+@media (max-width: 650px) {
+  .menu-items li a{
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 570px) {
+  .menu-items li a{
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    height: 150px;
+  }
+  .logo {
+    left: 35%;
+    top: -25px;
+  }
+  .menu {
+    top: 40px;
+    left: 6%;
+  }
+}
+@media (max-width: 450px) {
+  .menu {
+    left: 5%;
+  }
+  .menu-items li a{
+    font-size: 1em;
+  }
+}
+@media (max-width: 420px) {
+  .menu {
+    left: 0;
+  }
+}
+/* Login */
+/* Estilos para la página de inicio de sesión */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.login-form h2{
+  font-size: 2.2em;
+}
+.login-form label{
+  font-size: 1.5em;
+}
+
+.login-form input[type="text"], .login-form input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 1.5em;
+}
+
+.login-form button[type="submit"] {
+  position: relative;
+  left: 40%;
+  background-color: #3f8abf;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #08fac5;
+}
+
+.login-form span {
+  position: relative;
+  top: 50px;
+  left: 10%;
+  color: red;
+  font-size: 1.5em;
+}
+
+/* Footer*/
+footer {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+.footer-content {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Centrar horizontalmente */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Centrar horizontalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+}
+
+.contacto {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+p {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.menu ul,
+.redes-sociales ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.properties a,
+.menu a,
+.redes-sociales a {
+  color: #333;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.copyrigth {
+  text-align: center;
+  margin-top: 40px;
+  color: #999;
+  font-size: 1.2rem;
+}
+
+
+/*letters responsive*/
+@media (max-width: 600px) {
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+
+  .properties a,
+  .menu a,
+  .redes-sociales a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .properties a,
+  .menu a,
+  .redes-sociales a {
+    font-size: .8rem;
+  }
+}
+@media (max-width: 360px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .properties a,
+  .menu a,
+  .redes-sociales a {
+    font-size: .6rem;
+  }
+}
+
+/* Whatsapp*/
+.whatsapp {
+  position: fixed;
+  left: 93%;
+  top: 80%;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.selected-whatsapp img {
+  width: 50px;
+  height: 50px;
+}
+/*Responsive*/
+@media (max-width: 900px) {
+  .language-selector,
+  .whatsapp {
+    left: 88%;
+  }
+}
+@media (max-width: 600px) {
+  .language-selector,
+  .whatsapp {
+    left: 85%;
+  }
+}
+@media (max-width: 500px) {
+  .language-selector {
+    top: 230px;
+  }
+  .whatsapp {
+    top: 90%;
+  }
+}
